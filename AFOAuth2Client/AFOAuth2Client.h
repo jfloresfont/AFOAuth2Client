@@ -194,6 +194,11 @@
 @property (readonly, nonatomic) NSString *refreshToken;
 
 /**
+ The OAuth expiration date
+ */
+@property (readwrite, nonatomic) NSDate *expiration;
+
+/**
  Whether the OAuth credentials are expired.
  */
 @property (readonly, nonatomic, assign, getter = isExpired) BOOL expired;
